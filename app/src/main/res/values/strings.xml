@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Ordering And Inventory Management System</string>
+    <string name="title_people">People</string>
+    <string name="title_orders">Orders</string>
+    <string name="title_inventory">Inventory Details</string>
+    <string name="inventory_details">Inventory Details</string>
+    <string name="Item">Item</string>
+    <string name="Category">Category</string>
+    <string name="Location">Location</string>
+    <string name="Manufacturer">Manufacturer</string>
+    <string name="Supplier">Supplier</string>
+    <string name="Model">Model</string>
+    <string name="ID">ID</string>
+    <string name="Description">Description</string>
+    <string name="Remarks">Remarks</string>
+    <string name="Reorder_level">Reorder Level</string>
+    <string name="Target_level">Target Stock Level</string>
+    <string name="Discontinued">Discontinued</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Edit">Edit</string>
+    <string name="Back">Back</string>
+    <string name="Staff_login">Staff Login</string>
+    <string name="Staff_id">Staff ID: </string>
+    <string name="Password">Password: </string>
+    <string name="Login">Login</string>
+    <string name="forgot_password"><u>Forgot your password?</u></string>
+    <string name="current_stock">Current stock</string>
+    <string name="unit_price">Unit price</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="status">Status</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="left_arrow">\u003C</string>
+    <string name="right_arrow">\u003E</string>
+    <string-array name="product_category">
+        <item></item>
+        <item>Bag</item>
+        <item>Bottom</item>
+        <item>Cap</item>
+        <item>Shoes</item>
+        <item>Socks</item>
+        <item>Top</item>
+    </string-array>
+</resources>

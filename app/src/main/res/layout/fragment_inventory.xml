@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.inventory.InventoryFragment">
+
+    <TextView
+        android:id="@+id/TargetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:height="25dp"
+        android:text="@string/Target_level"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:theme="@style/titleTheme"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/ReorderTextView" />
+
+    <TextView
+        android:id="@+id/IDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:height="25dp"
+        android:text="@string/ID"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ModelTextView" />
+
+    <TextView
+        android:id="@+id/ItemTextView"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/grey"
+        android:text="@string/Item"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CategoryItemView"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Category"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ItemTextView" />
+
+    <TextView
+        android:id="@+id/SupplierTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:height="25dp"
+        android:text="@string/Supplier"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ManufacturerTextView" />
+
+    <TextView
+        android:id="@+id/DescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:height="25dp"
+        android:text="@string/Description"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/ItemTextView" />
+
+    <TextView
+        android:id="@+id/ModelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:height="25dp"
+        android:text="@string/Model"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SupplierTextView" />
+
+    <TextView
+        android:id="@+id/LocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Location"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CategoryItemView"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/ManufacturerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="112dp"
+        android:height="25dp"
+        android:text="@string/Manufacturer"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LocationTextView" />
+
+    <TextView
+        android:id="@+id/ReorderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:height="25dp"
+        android:text="@string/Reorder_level"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/RemarksTextView" />
+
+    <TextView
+        android:id="@+id/RemarksTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:height="40dp"
+        android:text="@string/Remarks"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/DescriptionTextView" />
+
+    <TextView
+        android:id="@+id/DiscontinuedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:height="25dp"
+        android:text="@string/status"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/TargetTextView" />
+
+    <TextView
+        android:id="@+id/discontinuedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:height="25dp"
+        android:text="@string/unit_price"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/discontinuedTextView2" />
+
+    <TextView
+        android:id="@+id/discontinuedTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:height="25dp"
+        android:text="@string/current_stock"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/DiscontinuedTextView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.57" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="179dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="344dp" />
+
+    <EditText
+        android:id="@+id/editTextCategory11"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategory12" />
+
+    <EditText
+        android:id="@+id/editTextCategory14"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Available"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategory11" />
+
+    <EditText
+        android:id="@+id/editTextCategory"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="250"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategory14" />
+
+    <EditText
+        android:id="@+id/editTextCategory13"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="RM 250.00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategory" />
+
+    <EditText
+        android:id="@+id/editTextCategory12"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategory8" />
+
+    <EditText
+        android:id="@+id/editTextCategory2"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Campiry Trading Company, Phase 8, Lot 39 Mile 5 1/2,"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <EditText
+        android:id="@+id/editTextCategory3"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="88450 Kota Kinabalu, Sabah."
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategory4" />
+
+    <EditText
+        android:id="@+id/editTextCategory5"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="16"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategory6" />
+
+    <EditText
+        android:id="@+id/editTextCategory6"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="NMD_R1 "
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategory7" />
+
+    <EditText
+        android:id="@+id/editTextCategory7"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Johnny Tan"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategory9" />
+
+    <EditText
+        android:id="@+id/editTextCategory8"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategory10" />
+
+    <EditText
+        android:id="@+id/editTextCategory9"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nike"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategory3" />
+
+    <EditText
+        android:id="@+id/editTextCategory10"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="This version has a camo-print upper decked out with a signature heel pull and midsole plugs. It rides on a responsive midsole, so you feel cushioned and comfortable all day."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/ItemTextView" />
+
+    <EditText
+        android:id="@+id/editTextCategory4"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Jalan Tuaran Lorong Durian 6, Kian Yap Industrial Estate,"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCategory2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="60sp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="200dp"
+        android:height="40sp"
+        android:text="@string/Edit"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="60sp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="200dp"
+        android:height="40sp"
+        android:text="@string/Back"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border"
+        android:entries="@array/product_category"
+        android:layoutMode="opticalBounds"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/ItemTextView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="@+id/spinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

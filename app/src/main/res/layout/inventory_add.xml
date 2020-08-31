@@ -21,19 +21,6 @@
         app:layout_constraintTop_toBottomOf="@+id/ReorderTextView" />
 
     <TextView
-        android:id="@+id/IDTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="40sp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:height="25dp"
-        android:text="@string/ID"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ModelTextView" />
-
-    <TextView
         android:id="@+id/ItemTextView"
         android:layout_width="0dp"
         android:layout_height="40sp"
@@ -183,7 +170,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:height="25dp"
-        android:text="@string/current_stock"
+        android:text="@string/quantity"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -211,7 +198,7 @@
         app:layout_constraintGuide_end="344dp" />
 
     <EditText
-        android:id="@+id/etTargetLevel"
+        android:id="@+id/targetLevelAdd"
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
@@ -222,10 +209,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/etReorderLevel" />
+        app:layout_constraintTop_toBottomOf="@+id/reorderLevelAdd" />
 
     <EditText
-        android:id="@+id/etStatus"
+        android:id="@+id/statusAdd"
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
@@ -236,25 +223,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/etTargetLevel" />
+        app:layout_constraintTop_toBottomOf="@+id/targetLevelAdd" />
 
     <EditText
-        android:id="@+id/etQuantity"
-        android:layout_width="0dp"
-        android:layout_height="40sp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/border"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/etStatus" />
-
-    <EditText
-        android:id="@+id/etUnitPrice"
+        android:id="@+id/quantityAdd"
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
@@ -266,10 +238,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/etQuantity" />
+        app:layout_constraintTop_toBottomOf="@+id/statusAdd" />
 
     <EditText
-        android:id="@+id/etReorderLevel"
+        android:id="@+id/unitPriceAdd"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/quantityAdd" />
+
+    <EditText
+        android:id="@+id/reorderLevelAdd"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="0dp"
         android:layout_height="40sp"
@@ -281,10 +268,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/etRemarks" />
+        app:layout_constraintTop_toBottomOf="@+id/remarksAdd" />
 
     <EditText
-        android:id="@+id/etLocation1"
+        android:id="@+id/locationAdd1"
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
@@ -296,10 +283,10 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/etCategory" />
+        app:layout_constraintTop_toBottomOf="@+id/categoryAdd" />
 
     <EditText
-        android:id="@+id/etLocation3"
+        android:id="@+id/locationAdd3"
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
@@ -311,10 +298,10 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/etLocation2" />
+        app:layout_constraintTop_toBottomOf="@+id/locationAdd2" />
 
     <EditText
-        android:id="@+id/etProductID"
+        android:id="@+id/modelAdd"
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
@@ -326,10 +313,10 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/etModel" />
+        app:layout_constraintTop_toBottomOf="@+id/supplierAdd" />
 
     <EditText
-        android:id="@+id/etModel"
+        android:id="@+id/supplierAdd"
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
@@ -341,25 +328,10 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/etSupplier" />
+        app:layout_constraintTop_toBottomOf="@+id/manufacturerAdd" />
 
     <EditText
-        android:id="@+id/etSupplier"
-        android:layout_width="0dp"
-        android:layout_height="40sp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/border"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/etManufacturer" />
-
-    <EditText
-        android:id="@+id/etRemarks"
+        android:id="@+id/remarksAdd"
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
@@ -371,10 +343,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/etDescription" />
+        app:layout_constraintTop_toBottomOf="@+id/descriptionAdd" />
 
     <EditText
-        android:id="@+id/etManufacturer"
+        android:id="@+id/manufacturerAdd"
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
@@ -386,10 +358,10 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/etLocation3" />
+        app:layout_constraintTop_toBottomOf="@+id/locationAdd3" />
 
     <EditText
-        android:id="@+id/etDescription"
+        android:id="@+id/descriptionAdd"
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
@@ -403,7 +375,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ItemTextView" />
 
     <EditText
-        android:id="@+id/etLocation2"
+        android:id="@+id/locationAdd2"
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
@@ -415,22 +387,22 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/etLocation1" />
+        app:layout_constraintTop_toBottomOf="@+id/locationAdd1" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnAdd"
         android:layout_width="0dp"
         android:layout_height="60sp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="200dp"
         android:height="40sp"
-        android:text="@string/Edit"
+        android:text="@string/Add"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnBackinAdd"
         android:layout_width="0dp"
         android:layout_height="60sp"
         android:layout_marginEnd="16dp"
@@ -439,10 +411,10 @@
         android:text="@string/Back"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button" />
+        app:layout_constraintEnd_toStartOf="@+id/btnAdd" />
 
     <Spinner
-        android:id="@+id/etCategory"
+        android:id="@+id/categoryAdd"
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
@@ -463,8 +435,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:src="@drawable/ic_baseline_arrow_drop_down_24"
-        app:layout_constraintBottom_toBottomOf="@+id/etCategory"
-        app:layout_constraintEnd_toEndOf="@+id/etCategory"
-        app:layout_constraintTop_toTopOf="@+id/etCategory" />
+        app:layout_constraintBottom_toBottomOf="@+id/categoryAdd"
+        app:layout_constraintEnd_toEndOf="@+id/categoryAdd"
+        app:layout_constraintTop_toTopOf="@+id/categoryAdd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,12 +21,28 @@
         android:id="@+id/navigation_inventory"
         android:name="com.example.seamassignment.ui.inventory.InventoryFragment"
         android:label="@string/inventory"
-        tools:layout="@layout/inventory_page" />
+        tools:layout="@layout/inventory_page" >
+        <action
+            android:id="@+id/action_navigation_inventory_to_inventory_details"
+            app:destination="@id/inventory_details" />
+        <action
+            android:id="@+id/action_navigation_inventory_to_inventoryAddFragment"
+            app:destination="@id/inventoryAddFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/inventory_details"
         android:name="com.example.seamassignment.ui.inventory.InventoryDetailsFragment"
         android:label="@string/title_inventory"
-        tools:layout="@layout/fragment_inventory" />
+        tools:layout="@layout/fragment_inventory" >
+        <argument android:name="productID"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/inventoryAddFragment"
+        android:name="com.example.seamassignment.ui.inventory.InventoryAddFragment"
+        android:label="@string/AddNewProduct"
+        tools:layout="@layout/inventory_add"/>
 
 </navigation>

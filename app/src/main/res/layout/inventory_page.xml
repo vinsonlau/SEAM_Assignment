@@ -8,7 +8,6 @@
     android:orientation="vertical">
 
     <TableLayout
-        android:id="@+id/inventory_table"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
@@ -1364,6 +1363,13 @@
         android:layout_gravity="right"
         android:orientation="horizontal"
         android:layout_marginHorizontal="10dp">
+
+        <Button
+            android:id="@+id/btnAddNewProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="665dp"
+            android:text="@string/AddNewProduct" />
 
         <Button
             android:id="@+id/btnLeftArrow"

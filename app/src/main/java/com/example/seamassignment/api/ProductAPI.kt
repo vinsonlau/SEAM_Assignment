@@ -5,7 +5,7 @@ import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.*
 
-private const val ROUTING_NAME : String = "product"
+private const val ROUTING_NAME : String = "products"
 
 interface ProductAPI {
 
@@ -20,7 +20,7 @@ interface ProductAPI {
     //The parameter will accept the customer order model class to create json
     //post request in order to create new order
     fun createProduct(
-        @Body Product: Product
+        @Body product: Product
     ):Call<ResponseBody>
 
 }

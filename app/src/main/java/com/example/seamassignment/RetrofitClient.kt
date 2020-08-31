@@ -1,6 +1,7 @@
 package com.example.seamassignment
 
 import com.example.seamassignment.api.CustomerOrderAPI
+import com.example.seamassignment.api.ProductAPI
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -26,5 +27,24 @@ object RetrofitClient {
             .build()
 
         retrofit.create(CustomerOrderAPI::class.java)
+    }
+
+    val productInstance: ProductAPI by lazy {
+
+        val loggingInterceptor: HttpLoggingInterceptor = HttpLoggingInterceptor()
+        loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
+
+        val okHttpClient: OkHttpClient = OkHttpClient()
+            .newBuilder()
+            .addInterceptor(loggingInterceptor)
+            .build()
+
+        val retrofit = Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .client(okHttpClient)
+            .build()
+
+        retrofit.create(ProductAPI::class.java)
     }
 }

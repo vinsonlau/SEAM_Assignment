@@ -20,6 +20,13 @@
     <fragment
         android:id="@+id/navigation_inventory"
         android:name="com.example.seamassignment.ui.inventory.InventoryFragment"
+        android:label="@string/inventory"
+        tools:layout="@layout/inventory_page" />
+
+    <fragment
+        android:id="@+id/inventory_details"
+        android:name="com.example.seamassignment.ui.inventory.InventoryDetailsFragment"
         android:label="@string/title_inventory"
         tools:layout="@layout/fragment_inventory" />
+
 </navigation>

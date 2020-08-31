@@ -111,1223 +111,1251 @@
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_1"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text="1"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/category_1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text="Shoes"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text="Nike"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/model_1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=" NZM-01"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/quantity_1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text="250"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text="RM250.00"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/status_1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text="Available"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/supplier_1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text="Wendy Tan"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_2"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:id="@+id/tvCategory1"
+                android:id="@+id/category_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/model_2"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/quantity_2"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/status_2"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/supplier_2"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_3"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/category_3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/model_3"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/quantity_3"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/status_3"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/supplier_3"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_4"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/category_4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/model_4"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/quantity_4"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/status_4"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/supplier_4"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_5"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/category_5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/model_5"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/quantity_5"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/status_5"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/supplier_5"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_6"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/category_6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/model_6"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/quantity_6"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/status_6"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/supplier_6"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_7"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/category_7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/model_7"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/quantity_7"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/status_7"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/supplier_7"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_8"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/category_8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/model_8"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/quantity_8"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/status_8"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/supplier_8"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_9"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/category_9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/model_9"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/quantity_9"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/status_9"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/supplier_9"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_10"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_10"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/category_10"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_10"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/model_10"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/quantity_10"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_10"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/status_10"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/supplier_10"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_11"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_11"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/category_11"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_11"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/model_11"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/quantity_11"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_11"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/status_11"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/supplier_11"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_12"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/category_12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/model_12"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/quantity_12"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/status_12"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/supplier_12"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_13"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_13"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/category_13"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_13"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/model_13"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/quantity_13"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_13"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/status_13"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/supplier_13"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row_14"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_margin="1dp"
-            android:background="#000000">
+            android:background="#000000"
+            >
 
             <TextView
+                android:id="@+id/id_14"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/category_14"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/manufacturer_14"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/model_14"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/quantity_14"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
+                android:id="@+id/price_14"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/status_14"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="1"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/supplier_14"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text=""
                 android:textAppearance="?android:attr/textAppearanceLarge" />
         </TableRow>
+
     </TableLayout>
 
     <LinearLayout

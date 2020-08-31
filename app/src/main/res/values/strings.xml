@@ -3,6 +3,7 @@
     <string name="title_people">People</string>
     <string name="title_orders">Orders</string>
     <string name="title_inventory">Inventory Details</string>
+    <string name="inventory">Inventory</string>
     <string name="inventory_details">Inventory Details</string>
     <string name="Item">Item</string>
     <string name="Category">Category</string>

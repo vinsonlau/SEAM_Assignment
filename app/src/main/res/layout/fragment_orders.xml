@@ -7,11 +7,12 @@
     tools:context=".ui.orders.OrdersFragment">
 
     <Button
-        android:id="@+id/buttonSalesHistory"
+        android:id="@+id/buttonSalesReport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/Sales_History"
+        android:text="@string/Sales_Report"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,27 +24,29 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="8dp"
         android:text="@string/Create_New_Order"
-        app:layout_constraintStart_toEndOf="@+id/buttonSalesHistory"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/buttonSalesReport"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonOrderHIstory"
+        android:id="@+id/buttonOrderHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="64dp"
         android:text="@string/Order_History"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSalesHistory"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSalesReport"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
         android:layout_width="1278dp"
         android:layout_height="742dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSalesHistory">
+        app:layout_constraintTop_toBottomOf="@+id/buttonSalesReport">
 
         <TableRow
             android:layout_width="match_parent"

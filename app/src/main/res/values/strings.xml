@@ -61,7 +61,7 @@
     <string name="Create_Order">Create Order</string>
     <string name="Create_New_Order">Create New Order</string>
     <string name="Order_History">Order History</string>
-    <string name="Sales_History">Sales History</string>
+    <string name="Sales_Report">Sales Report</string>
     <string name="Order_ID">Order ID</string>
     <string name="Total_Amount">Total Amount</string>
     <string name="Address">Address:</string>

@@ -1,26 +1,26 @@
 package com.example.seamassignment.api
 
-import com.example.seamassignment.Model.CustomerOrders
+import com.example.seamassignment.Model.Product
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.*
 
-private const val ROUTING_NAME : String = "customerOrders"
+private const val ROUTING_NAME : String = "product"
 
-interface CustomerOrderAPI {
+interface ProductAPI {
 
     @GET(ROUTING_NAME)
-    fun getCustomerOrders(): Call<ArrayList<CustomerOrders>>
+    fun getProduct(): Call<ArrayList<Product>>
 
     @GET("$ROUTING_NAME/{id}")
-    fun getCustomerOrdersByID(@Path("id") customerID:String ): Call<ArrayList<CustomerOrders>>
+    fun getProductByID(@Path("id") productID:String ): Call<ArrayList<Product>>
 
     @Headers("Content-Type: application/json; charset=UTF-8")
     @POST(ROUTING_NAME)
     //The parameter will accept the customer order model class to create json
     //post request in order to create new order
-    fun createCustomerOrder(
-        @Body customerOrders: CustomerOrders
+    fun createProduct(
+        @Body Product: Product
     ):Call<ResponseBody>
 
 }

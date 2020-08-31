@@ -9,4 +9,14 @@ data class CustomerOrders(
     val productQuantity: Int?,
     val discount: Double?
 
-)
+
+) {
+    override fun toString(): String {
+        return "CustomerOrders return successful \n" +
+                "(customerOrderID='$customerOrderID', \n" +
+                "customerID=$customerID\n" +
+                ", staffID=$staffID\n" +
+                ", date=$date\n" +
+                ", productID=$productID, productQuantity=$productQuantity, discount=$discount)"
+    }
+}

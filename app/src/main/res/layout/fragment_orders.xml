@@ -6,17 +6,110 @@
     android:layout_height="match_parent"
     tools:context=".ui.orders.OrdersFragment">
 
-    <TextView
-        android:id="@+id/text_dashboard"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/buttonSalesHistory"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/Sales_History"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCreateNewOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Create_New_Order"
+        app:layout_constraintStart_toEndOf="@+id/buttonSalesHistory"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonOrderHIstory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/Order_History"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSalesHistory"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="1278dp"
+        android:layout_height="742dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSalesHistory">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/headerOrderID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="100px"
+                android:paddingRight="100px"
+                android:text="@string/Order_ID"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/headerCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="300px"
+                android:paddingRight="300px"
+                android:text="@string/Customer"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/headerTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="100px"
+                android:paddingRight="100px"
+                android:text="@string/Total_Amount"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/headerOrderDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="100px"
+                android:paddingRight="100px"
+                android:text="@string/Order_Date"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/headerStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="100px"
+                android:paddingRight="100px"
+                android:text="@string/status"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

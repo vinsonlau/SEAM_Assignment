@@ -15,11 +15,19 @@
         android:id="@+id/navigation_orders"
         android:name="com.example.seamassignment.ui.orders.OrdersFragment"
         android:label="@string/title_orders"
-        tools:layout="@layout/fragment_orders" />
+        tools:layout="@layout/fragment_orders" >
+        <action
+            android:id="@+id/action_navigation_orders_to_newOrderFragment2"
+            app:destination="@id/newOrderFragment2" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_inventory"
         android:name="com.example.seamassignment.ui.inventory.InventoryFragment"
         android:label="@string/title_inventory"
         tools:layout="@layout/fragment_inventory" />
+    <fragment
+        android:id="@+id/newOrderFragment2"
+        android:name="com.example.seamassignment.ui.orders.NewOrderFragment"
+        android:label="@string/Create_New_Order" />
 </navigation>

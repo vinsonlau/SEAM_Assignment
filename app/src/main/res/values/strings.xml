@@ -19,6 +19,8 @@
     <string name="Discontinued">Discontinued</string>
     <string name="Cancel">Cancel</string>
     <string name="Edit">Edit</string>
+    <string name="Add">Add</string>
+    <string name="AddNewProduct">Add New Product</string>
     <string name="Back">Back</string>
     <string name="Staff_login">Staff Login</string>
     <string name="Staff_id">Staff ID: </string>

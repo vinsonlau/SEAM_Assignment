@@ -15,19 +15,34 @@
         android:id="@+id/navigation_orders"
         android:name="com.example.seamassignment.ui.orders.OrdersFragment"
         android:label="@string/title_orders"
-        tools:layout="@layout/fragment_orders" >
-        <action
-            android:id="@+id/action_navigation_orders_to_newOrderFragment2"
-            app:destination="@id/newOrderFragment2" />
-    </fragment>
+        tools:layout="@layout/fragment_orders" />
 
     <fragment
         android:id="@+id/navigation_inventory"
         android:name="com.example.seamassignment.ui.inventory.InventoryFragment"
-        android:label="@string/title_inventory"
-        tools:layout="@layout/fragment_inventory" />
+        android:label="@string/inventory"
+        tools:layout="@layout/inventory_page" >
+        <action
+            android:id="@+id/action_navigation_inventory_to_inventory_details"
+            app:destination="@id/inventory_details" />
+        <action
+            android:id="@+id/action_navigation_inventory_to_inventoryAddFragment"
+            app:destination="@id/inventoryAddFragment" />
+    </fragment>
+
     <fragment
-        android:id="@+id/newOrderFragment2"
-        android:name="com.example.seamassignment.ui.orders.NewOrderFragment"
-        android:label="@string/Create_New_Order" />
+        android:id="@+id/inventory_details"
+        android:name="com.example.seamassignment.ui.inventory.InventoryDetailsFragment"
+        android:label="@string/title_inventory"
+        tools:layout="@layout/fragment_inventory" >
+        <argument android:name="productID"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/inventoryAddFragment"
+        android:name="com.example.seamassignment.ui.inventory.InventoryAddFragment"
+        android:label="@string/AddNewProduct"
+        tools:layout="@layout/inventory_add"/>
+
 </navigation>

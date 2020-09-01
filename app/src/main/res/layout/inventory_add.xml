@@ -48,19 +48,6 @@
         app:layout_constraintTop_toBottomOf="@+id/ItemTextView" />
 
     <TextView
-        android:id="@+id/SupplierTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="40sp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:height="25dp"
-        android:text="@string/Supplier"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ManufacturerTextView" />
-
-    <TextView
         android:id="@+id/DescriptionTextView"
         android:layout_width="wrap_content"
         android:layout_height="40sp"
@@ -84,7 +71,7 @@
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SupplierTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/ManufacturerTextView" />
 
     <TextView
         android:id="@+id/LocationTextView"
@@ -103,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40sp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="128dp"
         android:height="25dp"
         android:text="@string/Manufacturer"
         android:textColor="@android:color/black"
@@ -290,7 +277,7 @@
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/border"
         android:ems="10"
@@ -302,21 +289,6 @@
 
     <EditText
         android:id="@+id/modelAdd"
-        android:layout_width="0dp"
-        android:layout_height="40sp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/border"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/supplierAdd" />
-
-    <EditText
-        android:id="@+id/supplierAdd"
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
@@ -379,7 +351,7 @@
         android:layout_width="0dp"
         android:layout_height="40sp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/border"
         android:ems="10"

@@ -25,9 +25,11 @@
     <string name="AddNewProduct">Add New Product</string>
     <string name="Back">Back</string>
     <string name="Staff_login">Staff Login</string>
-    <string name="Staff_id">Staff ID: </string>
+    <string name="Username">Username: </string>
     <string name="Password">Password: </string>
+    <string name="Successful_login">You have successfully logged in.</string>
     <string name="Login">Login</string>
+    <string name="Logout">Logout</string>
     <string name="forgot_password"><u>Forgot your password?</u></string>
     <string name="current_stock">Current stock</string>
     <string name="unit_price">Unit price</string>

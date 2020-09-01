@@ -70,4 +70,8 @@
     <string name="Total_Amount">Total Amount</string>
     <string name="Address">Address:</string>
     <string name="no_payment_info">Payment is not yet made by the customer.</string>
+    <string name="Product">Product</string>
+    <string name="Discount">Discount</string>
+    <string name="Total_Price">Total Price</string>
+    <string name="Add_Product">Add Product</string>
 </resources>

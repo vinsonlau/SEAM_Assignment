@@ -1,7 +1,9 @@
 package com.example.seamassignment
 
+import com.example.seamassignment.api.CustomerAPI
 import com.example.seamassignment.api.CustomerOrderAPI
 import com.example.seamassignment.api.ProductAPI
+import com.example.seamassignment.api.StaffAPI
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -48,5 +50,43 @@ object RetrofitClient {
             .build()
 
         retrofit.create(ProductAPI::class.java)
+    }
+
+    val customerInstance: CustomerAPI by lazy {
+
+        val loggingInterceptor: HttpLoggingInterceptor = HttpLoggingInterceptor()
+        loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
+
+        val okHttpClient: OkHttpClient = OkHttpClient()
+            .newBuilder()
+            .addInterceptor(loggingInterceptor)
+            .build()
+
+        val retrofit = Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .client(okHttpClient)
+            .build()
+
+        retrofit.create(CustomerAPI::class.java)
+    }
+
+    val staffInstance: StaffAPI by lazy {
+
+        val loggingInterceptor: HttpLoggingInterceptor = HttpLoggingInterceptor()
+        loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
+
+        val okHttpClient: OkHttpClient = OkHttpClient()
+            .newBuilder()
+            .addInterceptor(loggingInterceptor)
+            .build()
+
+        val retrofit = Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .client(okHttpClient)
+            .build()
+
+        retrofit.create(StaffAPI::class.java)
     }
 }

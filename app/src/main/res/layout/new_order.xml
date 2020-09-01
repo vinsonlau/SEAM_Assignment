@@ -5,6 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="1278dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailLabel3" />
+
     <TextView
         android:id="@+id/textViewEmailLabel2"
         android:layout_width="wrap_content"
@@ -68,6 +78,18 @@
         app:layout_constraintTop_toTopOf="@+id/textViewEmail" />
 
     <TextView
+        android:id="@+id/textViewEmailLabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Order_Details"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
         android:id="@+id/textViewCustomerLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -109,41 +131,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayoutOrder"
+    <View
+        android:id="@+id/divider"
         android:layout_width="1278dp"
-        android:layout_height="wrap_content"
+        android:layout_height="1dp"
         android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewOrderDate">
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabItemOrderDetails"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Order_Details" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabItemShipInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Shipping_Information" />
-
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabItemPaymentInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Payment_Information" />
-    </com.google.android.material.tabs.TabLayout>
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/ViewPagerOrder"
-        android:layout_width="1278dp"
-        android:layout_height="659dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayoutOrder" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrderDate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

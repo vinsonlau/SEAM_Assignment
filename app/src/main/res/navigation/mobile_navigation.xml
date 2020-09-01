@@ -38,6 +38,9 @@
         <argument android:name="productID"
             app:argType="string"
             app:nullable="true" />
+        <action
+            android:id="@+id/action_inventory_details_self"
+            app:destination="@id/inventory_details" />
     </fragment>
     <fragment
         android:id="@+id/inventoryAddFragment"

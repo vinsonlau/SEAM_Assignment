@@ -13,7 +13,10 @@ interface ProductAPI {
     fun getProduct(): Call<ArrayList<Product>>
 
     @GET("$ROUTING_NAME/{id}")
-    fun getProductByID(@Path("id") productID:String ): Call<ArrayList<Product>>
+    fun getProductByID(@Path("id") productID:String ): Call<Product>
+
+    @DELETE("$ROUTING_NAME/{id}")
+    fun deleteProductByID(@Path("id") productID:String ): Call<Product>
 
     @Headers("Content-Type: application/json; charset=UTF-8")
     @POST(ROUTING_NAME)

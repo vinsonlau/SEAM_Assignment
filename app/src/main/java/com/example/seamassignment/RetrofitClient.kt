@@ -8,7 +8,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
-    private const val BASE_URL = "http://192.168.1.102:8080/api/"
+    private const val BASE_URL = "http://192.168.0.156:8080/api/"
+    //private const val BASE_URL = "http://175.137.99.164:8090/api/"
+
 
     val customerOrderInstance: CustomerOrderAPI by lazy {
 

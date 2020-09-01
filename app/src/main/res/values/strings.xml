@@ -48,4 +48,24 @@
         <item>Socks</item>
         <item>Top</item>
     </string-array>
+
+    <!--Added by HX-->
+    <string name="Customer">Customer</string>
+    <string name="Email_Address">E-mail Address</string>
+    <string name="Salesperson">Salesperson</string>
+    <string name="Order_Date">Order Date</string>
+    <string name="Order_Details">Order Details</string>
+    <string name="Shipping_Information">Shipping Information</string>
+    <string name="Payment_Information">Payment Information</string>
+    <string name="Update_Order_Status">Update Order Status</string>
+    <string name="Create_Invoice">Create Invoice</string>
+    <string name="Order_Status">Order Status</string>
+    <string name="Create_Order">Create Order</string>
+    <string name="Create_New_Order">Create New Order</string>
+    <string name="Order_History">Order History</string>
+    <string name="Sales_Report">Sales Report</string>
+    <string name="Order_ID">Order ID</string>
+    <string name="Total_Amount">Total Amount</string>
+    <string name="Address">Address:</string>
+    <string name="no_payment_info">Payment is not yet made by the customer.</string>
 </resources>

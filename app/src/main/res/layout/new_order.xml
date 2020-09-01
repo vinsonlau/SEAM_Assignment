@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewEmailLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/Order_Date"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewOrderDate"
+        app:layout_constraintStart_toEndOf="@+id/textViewEmail"
+        app:layout_constraintTop_toTopOf="@+id/textViewOrderDate" />
+
+    <TextView
+        android:id="@+id/textViewSalesperson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/Salesperson"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerSalesperson"
+        app:layout_constraintStart_toEndOf="@+id/spinnerCustomer"
+        app:layout_constraintTop_toTopOf="@+id/spinnerSalesperson" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="abc@gmail.com"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewEmailLabel"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCustomer" />
+
+    <TextView
+        android:id="@+id/textViewOrderDate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="30/8/2020"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerSalesperson"
+        app:layout_constraintStart_toStartOf="@+id/spinnerSalesperson"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSalesperson" />
+
+    <TextView
+        android:id="@+id/textViewEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/Email_Address"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewEmail" />
+
+    <TextView
+        android:id="@+id/textViewCustomerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/Customer"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerCustomer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinnerCustomer" />
+
+    <Spinner
+        android:id="@+id/spinnerCustomer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmail"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmail"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerSalesperson"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewSalesperson"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCreateInvoice"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#64DD17"
+        android:text="@string/Create_Order"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutOrder"
+        android:layout_width="1278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrderDate">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItemOrderDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Order_Details" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItemShipInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Shipping_Information" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItemPaymentInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Payment_Information" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/ViewPagerOrder"
+        android:layout_width="1278dp"
+        android:layout_height="659dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayoutOrder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

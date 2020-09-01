@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
+    android:label="@string/Sales_Report"
     app:startDestination="@+id/navigation_people">
 
     <fragment
@@ -15,13 +16,23 @@
         android:id="@+id/navigation_orders"
         android:name="com.example.seamassignment.ui.orders.OrdersFragment"
         android:label="@string/title_orders"
-        tools:layout="@layout/fragment_orders" />
+        tools:layout="@layout/fragment_orders">
+        <action
+            android:id="@+id/action_navigation_orders_to_newOrderFragment"
+            app:destination="@id/newOrderFragment" />
+        <action
+            android:id="@+id/action_navigation_orders_to_orderHistoryFragment"
+            app:destination="@id/orderHistoryFragment" />
+        <action
+            android:id="@+id/action_navigation_orders_to_salesReportFragement"
+            app:destination="@id/salesReportFragement" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_inventory"
         android:name="com.example.seamassignment.ui.inventory.InventoryFragment"
         android:label="@string/inventory"
-        tools:layout="@layout/inventory_page" >
+        tools:layout="@layout/inventory_page">
         <action
             android:id="@+id/action_navigation_inventory_to_inventory_details"
             app:destination="@id/inventory_details" />
@@ -34,8 +45,9 @@
         android:id="@+id/inventory_details"
         android:name="com.example.seamassignment.ui.inventory.InventoryDetailsFragment"
         android:label="@string/title_inventory"
-        tools:layout="@layout/fragment_inventory" >
-        <argument android:name="productID"
+        tools:layout="@layout/fragment_inventory">
+        <argument
+            android:name="productID"
             app:argType="string"
             app:nullable="true" />
         <action
@@ -46,6 +58,18 @@
         android:id="@+id/inventoryAddFragment"
         android:name="com.example.seamassignment.ui.inventory.InventoryAddFragment"
         android:label="@string/AddNewProduct"
-        tools:layout="@layout/inventory_add"/>
+        tools:layout="@layout/inventory_add" />
+    <fragment
+        android:id="@+id/newOrderFragment"
+        android:name="com.example.seamassignment.ui.orders.NewOrderFragment"
+        android:label="@string/Create_New_Order" />
+    <fragment
+        android:id="@+id/salesReportFragement"
+        android:name="com.example.seamassignment.ui.orders.SalesReportFragement"
+        android:label="@string/Sales_Report" />
+    <fragment
+        android:id="@+id/orderHistoryFragment"
+        android:name="com.example.seamassignment.ui.orders.OrderHistoryFragment"
+        android:label="@string/Order_History" />
 
 </navigation>

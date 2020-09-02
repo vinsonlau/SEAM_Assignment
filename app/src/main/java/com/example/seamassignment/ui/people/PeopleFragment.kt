@@ -8,6 +8,8 @@ import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.fragment.app.Fragment
 import com.example.seamassignment.R
 import kotlinx.android.synthetic.main.fragment_people.*
+import androidx.core.app.ActivityCompat.invalidateOptionsMenu
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class PeopleFragment : Fragment() {
 
@@ -25,6 +27,10 @@ class PeopleFragment : Fragment() {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
 
+        val navView: BottomNavigationView = requireActivity().findViewById(R.id.nav_view)
+        navView.menu.findItem(R.id.navigation_orders).isEnabled = false
+        navView.menu.findItem(R.id.navigation_inventory).isEnabled = false
+
         btnLogin.setOnClickListener {
             if(etUsername.text.toString() == "admin" && etPassword.text.toString() == "admin"){
                 tvSuccessLogin.visibility = View.VISIBLE
@@ -35,6 +41,9 @@ class PeopleFragment : Fragment() {
                 etUsername.visibility = View.GONE
                 etPassword.visibility = View.GONE
                 btnLogin.visibility = View.GONE
+
+                navView.menu.findItem(R.id.navigation_orders).isEnabled = true
+                navView.menu.findItem(R.id.navigation_inventory).isEnabled = true
             }
         }
 
@@ -47,9 +56,37 @@ class PeopleFragment : Fragment() {
             etUsername.visibility = View.VISIBLE
             etPassword.visibility = View.VISIBLE
             btnLogin.visibility = View.VISIBLE
-        }
-        return root
 
+            navView.menu.findItem(R.id.navigation_orders).isEnabled = false
+            navView.menu.findItem(R.id.navigation_inventory).isEnabled = false
+        }
+        //activity?.invalidateOptionsMenu()
+        return root
     }
 
+    /*override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.bottom_nav_menu, menu)
+        val test = menu.findItem(R.id.navigation_orders)
+
+        test.setEnabled(false)
+        test.setTitle("hola")
+        test.setIcon(null)
+        tvUsername.setText(test.toString())
+        return super.onCreateOptionsMenu(menu, inflater)
+    }*/
+
+   /* private fun updateMenuTitles(menu: MenuItem){
+        menu.title = "hola"
+        menu.setIcon(null)
+        tvUsername.setText(menu.toString())
+    }*/
+
+    /*override fun onPrepareOptionsMenu(menu: Menu) {
+        super.onPrepareOptionsMenu(menu)
+        val test = menu.findItem(R.id.navigation_inventory)
+
+        test.setTitle("hola")
+        test.setVisible(false)
+        etUsername.setText(test.toString())
+    }*/
 }

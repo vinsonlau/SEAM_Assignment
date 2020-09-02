@@ -118,8 +118,8 @@ class InventoryDetailsFragment : Fragment() {
                     etRemarks.text.toString(),
                     etTargetLevel.text.toString().toInt(),
                     etReorderLevel.text.toString().toInt(),
-                    etLocation1.text.toString() + ", " +
-                            etLocation2.text.toString() + ", " +
+                    etLocation1.text.toString() + "|" +
+                            etLocation2.text.toString() + "|" +
                             etLocation3.text.toString(),
                     "STest"
                 )
@@ -164,8 +164,13 @@ class InventoryDetailsFragment : Fragment() {
                 else if(product?.category.toString() == "Top")
                     category.setSelection(6)
 
-                //need to split ","
-                root.findViewById<EditText>(R.id.etLocation1).setText(product?.location)
+                //need to split "|"
+                var str = product?.location
+                val location = str?.split("|")!!.toTypedArray()
+
+                root.findViewById<EditText>(R.id.etLocation1).setText(location[0])
+                root.findViewById<EditText>(R.id.etLocation2).setText(location[1])
+                root.findViewById<EditText>(R.id.etLocation3).setText(location[2])
                 root.findViewById<EditText>(R.id.etManufacturer).setText(product?.manufacturer)
                 //lack of supplier yet
                 //root.findViewById<EditText>(R.id.etSupplier).setText(product?.get(0)?.supplier)
@@ -209,7 +214,7 @@ class InventoryDetailsFragment : Fragment() {
         })
     }
 
-    private fun createProduct(prodID:String){
+    /*private fun createProduct(prodID:String){
         val product = Product(prodID,
             etModel.text.toString(),
             etManufacturer.text.toString(),
@@ -221,8 +226,8 @@ class InventoryDetailsFragment : Fragment() {
             etRemarks.text.toString(),
             etTargetLevel.text.toString().toInt(),
             etReorderLevel.text.toString().toInt(),
-            etLocation1.text.toString() + ", " +
-                    etLocation2.text.toString() + ", " +
+            etLocation1.text.toString() + "|" +
+                    etLocation2.text.toString() + "|" +
                     etLocation3.text.toString(),
             "STest"
         )
@@ -235,6 +240,6 @@ class InventoryDetailsFragment : Fragment() {
                 view?.findNavController()?.navigate(R.id.navigation_inventory)
             }
         })
-    }
+    }*/
 
 }

@@ -11,8 +11,8 @@
         android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginStart="472dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginStart="468dp"
+        android:layout_marginTop="248dp"
         android:text="@string/Username"
         android:textColor="@android:color/black"
         android:textSize="24sp"
@@ -20,38 +20,33 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvSuccessLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="376dp"
-        android:layout_marginEnd="456dp"
-        android:text="@string/Successful_login"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/etUsername"
+        android:id="@+id/tvPassword"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="304dp"
-        android:layout_marginEnd="570dp"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:layout_marginStart="468dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/Password"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="452dp"
+        android:text="@string/Login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/tvUsername"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="570dp"
         android:ems="10"
         android:inputType="textPassword"
@@ -61,36 +56,41 @@
         app:layout_constraintTop_toBottomOf="@+id/etUsername" />
 
     <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="460dp"
-        android:text="@string/Login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
-
-    <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="460dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="452dp"
         android:text="@string/Logout"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSuccessLogin" />
 
-    <TextView
-        android:id="@+id/tvPassword"
+    <EditText
+        android:id="@+id/etUsername"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginStart="472dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/Password"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="570dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvUsername"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSuccessLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="448dp"
+        android:text="@string/Successful_login"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvUsername" />
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

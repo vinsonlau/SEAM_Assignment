@@ -38,6 +38,9 @@ class InventoryDetailsFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_inventory, container, false)
         val args = InventoryDetailsFragmentArgs.fromBundle(requireArguments())
 
+        root.findViewById<Spinner>(R.id.etCategory).isEnabled = false
+
+
         getProductByID(args.productID.toString(),root)
 
         val backInDetails = root.findViewById<Button>(R.id.btnBackInDetails)
@@ -58,12 +61,42 @@ class InventoryDetailsFragment : Fragment() {
             val deleteInDetails = root.findViewById<Button>(R.id.btnDeleteInDetails)
             val updateInDetails = root.findViewById<Button>(R.id.btnUpdateInDetails)
 
+            root.findViewById<Spinner>(R.id.etCategory).isEnabled = true
+            root.findViewById<EditText>(R.id.etLocation1).isEnabled = true
+            root.findViewById<EditText>(R.id.etLocation2).isEnabled = true
+            root.findViewById<EditText>(R.id.etLocation3).isEnabled = true
+            root.findViewById<EditText>(R.id.etManufacturer).isEnabled = true
+            root.findViewById<EditText>(R.id.etSupplier).isEnabled = true
+            root.findViewById<EditText>(R.id.etModel).isEnabled = true
+            root.findViewById<EditText>(R.id.etDescription).isEnabled = true
+            root.findViewById<EditText>(R.id.etRemarks).isEnabled = true
+            root.findViewById<EditText>(R.id.etReorderLevel).isEnabled = true
+            root.findViewById<EditText>(R.id.etTargetLevel).isEnabled = true
+            root.findViewById<EditText>(R.id.etStatus).isEnabled = true
+            root.findViewById<EditText>(R.id.etQuantity).isEnabled = true
+            root.findViewById<EditText>(R.id.etUnitPrice).isEnabled = true
+
             backInDetails2.setOnClickListener {
                 editInDetails.visibility = View.VISIBLE
                 backInDetails.visibility = View.VISIBLE
                 btnUpdateInDetails.visibility = View.GONE
                 btnDeleteInDetails.visibility = View.GONE
                 btnBackInDetails2.visibility = View.GONE
+
+                root.findViewById<Spinner>(R.id.etCategory).isEnabled = false
+                root.findViewById<EditText>(R.id.etLocation1).isEnabled = false
+                root.findViewById<EditText>(R.id.etLocation2).isEnabled = false
+                root.findViewById<EditText>(R.id.etLocation3).isEnabled = false
+                root.findViewById<EditText>(R.id.etManufacturer).isEnabled = false
+                root.findViewById<EditText>(R.id.etSupplier).isEnabled = false
+                root.findViewById<EditText>(R.id.etModel).isEnabled = false
+                root.findViewById<EditText>(R.id.etDescription).isEnabled = false
+                root.findViewById<EditText>(R.id.etRemarks).isEnabled = false
+                root.findViewById<EditText>(R.id.etReorderLevel).isEnabled = false
+                root.findViewById<EditText>(R.id.etTargetLevel).isEnabled = false
+                root.findViewById<EditText>(R.id.etStatus).isEnabled = false
+                root.findViewById<EditText>(R.id.etQuantity).isEnabled = false
+                root.findViewById<EditText>(R.id.etUnitPrice).isEnabled = false
             }
 
             deleteInDetails.setOnClickListener{
@@ -72,12 +105,29 @@ class InventoryDetailsFragment : Fragment() {
             }
 
             updateInDetails.setOnClickListener {
-                deleteProductByID(args.productID.toString(),root)
-                createProduct(args.productID.toString())
+                /*deleteProductByID(args.productID.toString(),root)
+                createProduct(args.productID.toString())*/
+                val product = Product(args.productID.toString(),
+                    etModel.text.toString(),
+                    etManufacturer.text.toString(),
+                    etCategory.selectedItem.toString(),
+                    etDescription.text.toString(),
+                    etUnitPrice.text.toString().toDouble(),
+                    etStatus.text.toString(),
+                    etQuantity.text.toString().toInt(),
+                    etRemarks.text.toString(),
+                    etTargetLevel.text.toString().toInt(),
+                    etReorderLevel.text.toString().toInt(),
+                    etLocation1.text.toString() + "|" +
+                            etLocation2.text.toString() + "|" +
+                            etLocation3.text.toString(),
+                    "STest"
+                )
+
+                updateProductByID(args.productID.toString(), product)
+                view?.findNavController()?.navigate(R.id.navigation_inventory)
             }
         }
-
-
 
         return root
     }
@@ -114,8 +164,13 @@ class InventoryDetailsFragment : Fragment() {
                 else if(product?.category.toString() == "Top")
                     category.setSelection(6)
 
-                //need to split ","
-                root.findViewById<EditText>(R.id.etLocation1).setText(product?.location)
+                //need to split "|"
+                var str = product?.location
+                val location = str?.split("|")!!.toTypedArray()
+
+                root.findViewById<EditText>(R.id.etLocation1).setText(location[0])
+                root.findViewById<EditText>(R.id.etLocation2).setText(location[1])
+                root.findViewById<EditText>(R.id.etLocation3).setText(location[2])
                 root.findViewById<EditText>(R.id.etManufacturer).setText(product?.manufacturer)
                 //lack of supplier yet
                 //root.findViewById<EditText>(R.id.etSupplier).setText(product?.get(0)?.supplier)
@@ -146,7 +201,20 @@ class InventoryDetailsFragment : Fragment() {
         })
     }
 
-    private fun createProduct(prodID:String){
+    private fun updateProductByID(productID: String, product:Product){
+
+        RetrofitClient.productInstance.updateProductByID(productID,product).enqueue(object: Callback<ResponseBody>{
+            override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
+
+            }
+
+            override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
+
+            }
+        })
+    }
+
+    /*private fun createProduct(prodID:String){
         val product = Product(prodID,
             etModel.text.toString(),
             etManufacturer.text.toString(),
@@ -158,8 +226,8 @@ class InventoryDetailsFragment : Fragment() {
             etRemarks.text.toString(),
             etTargetLevel.text.toString().toInt(),
             etReorderLevel.text.toString().toInt(),
-            etLocation1.text.toString() + ", " +
-                    etLocation2.text.toString() + ", " +
+            etLocation1.text.toString() + "|" +
+                    etLocation2.text.toString() + "|" +
                     etLocation3.text.toString(),
             "STest"
         )
@@ -172,6 +240,6 @@ class InventoryDetailsFragment : Fragment() {
                 view?.findNavController()?.navigate(R.id.navigation_inventory)
             }
         })
-    }
+    }*/
 
 }

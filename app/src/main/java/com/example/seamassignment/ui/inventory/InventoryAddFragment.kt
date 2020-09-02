@@ -63,8 +63,8 @@ class InventoryAddFragment : Fragment() {
             remarksAdd.text.toString(),
             targetLevelAdd.text.toString().toInt(),
             reorderLevelAdd.text.toString().toInt(),
-            locationAdd1.text.toString() + ", " +
-                    locationAdd2.text.toString() + ", " +
+            locationAdd1.text.toString() + "|" +
+                    locationAdd2.text.toString() + "|" +
                     locationAdd3.text.toString(),
             "STest"
         )

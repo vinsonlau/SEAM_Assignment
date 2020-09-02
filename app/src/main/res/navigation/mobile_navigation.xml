@@ -62,14 +62,27 @@
     <fragment
         android:id="@+id/newOrderFragment"
         android:name="com.example.seamassignment.ui.orders.NewOrderFragment"
-        android:label="@string/Create_New_Order" />
+        android:label="@string/Create_New_Order" >
+        <action
+            android:id="@+id/action_newOrderFragment_to_addProductToOrderFragment"
+            app:destination="@id/addProductToOrderFragment" />
+    </fragment>
     <fragment
         android:id="@+id/salesReportFragement"
-        android:name="com.example.seamassignment.ui.orders.SalesReportFragement"
+        android:name="com.example.seamassignment.ui.orders.SalesReportFragment"
         android:label="@string/Sales_Report" />
     <fragment
         android:id="@+id/orderHistoryFragment"
         android:name="com.example.seamassignment.ui.orders.OrderHistoryFragment"
         android:label="@string/Order_History" />
+    <fragment
+        android:id="@+id/addProductToOrderFragment"
+        android:name="com.example.seamassignment.ui.orders.AddProductToOrderFragment"
+        android:label="Add product to order" >
+        <action
+            android:id="@+id/action_addProductToOrderFragment_to_newOrderFragment"
+            app:popUpTo="@id/newOrderFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
 
 </navigation>

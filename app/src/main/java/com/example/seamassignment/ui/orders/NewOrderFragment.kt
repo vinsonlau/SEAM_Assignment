@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.annotation.RequiresApi
+import androidx.navigation.findNavController
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.example.seamassignment.Model.Customer
@@ -18,6 +19,7 @@ import com.example.seamassignment.R
 import com.example.seamassignment.RetrofitClient
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.android.synthetic.main.fragment_orders.*
 import kotlinx.android.synthetic.main.new_order.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -29,12 +31,11 @@ import kotlin.collections.ArrayList
 class NewOrderFragment : Fragment() {
     //private lateinit var newOrderAdapter: NewOrderAdapter
     private lateinit var viewPager: ViewPager2
+    private lateinit var viewModel: NewOrderViewModel
 
     companion object {
         fun newInstance() = NewOrderFragment()
     }
-
-    private lateinit var viewModel: NewOrderViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -44,15 +45,19 @@ class NewOrderFragment : Fragment() {
         return inflater.inflate(R.layout.new_order, container, false)
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(NewOrderViewModel::class.java)
         // TODO: Use the ViewModel
         //initTabLayout()
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         initSpinner()
         initOrderDate()
-
+        initButtons()
     }
 
     private fun initTabLayout() {
@@ -165,6 +170,12 @@ class NewOrderFragment : Fragment() {
 //            }
 //
 //        })
+    }
+
+    private fun initButtons(){
+        buttonAddProduct.setOnClickListener {
+            it?.findNavController()?.navigate(R.id.action_newOrderFragment_to_addProductToOrderFragment)
+        }
     }
 
     @RequiresApi(Build.VERSION_CODES.O)

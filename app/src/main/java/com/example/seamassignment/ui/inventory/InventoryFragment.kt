@@ -10,15 +10,12 @@ import androidx.navigation.findNavController
 import com.example.seamassignment.Model.CustomerOrders
 import com.example.seamassignment.R
 import com.example.seamassignment.RetrofitClient
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.seamassignment.Model.Product
 import kotlinx.android.synthetic.main.inventory_page.*
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.http.Headers
-import retrofit2.http.POST
 import kotlin.collections.ArrayList
 
 class InventoryFragment : Fragment() {
@@ -34,7 +31,7 @@ class InventoryFragment : Fragment() {
         val root = inflater.inflate(R.layout.inventory_page, container, false)
         getProduct(root)
 
-        val addProduct = root.findViewById<Button>(R.id.btnAddNewProduct)
+        val addProduct = root.findViewById<Button>(R.id.buttonAddProduct)
 
         addProduct.setOnClickListener{
             view?.findNavController()?.navigate(R.id.inventoryAddFragment)

@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.seamassignment.R
 
-class SalesReportFragement : Fragment() {
+class SalesReportFragment : Fragment() {
 
     companion object{
-        fun newInstance() = SalesReportFragement()
+        fun newInstance() = SalesReportFragment()
     }
 
     override fun onCreateView(

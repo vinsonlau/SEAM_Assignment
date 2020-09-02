@@ -33,10 +33,10 @@ class OrdersFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        initButton()
+        initButtons()
     }
 
-    private fun initButton(){
+    private fun initButtons(){
         buttonCreateNewOrder.setOnClickListener {
             it?.findNavController()?.navigate(R.id.action_navigation_orders_to_newOrderFragment)
         }

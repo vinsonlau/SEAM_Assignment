@@ -26,6 +26,9 @@
         <action
             android:id="@+id/action_navigation_orders_to_salesReportFragement"
             app:destination="@id/salesReportFragement" />
+        <action
+            android:id="@+id/action_navigation_orders_to_viewOrderFragment"
+            app:destination="@id/viewOrderFragment" />
     </fragment>
 
     <fragment
@@ -87,5 +90,9 @@
             app:popUpTo="@id/newOrderFragment"
             app:popUpToInclusive="false" />
     </fragment>
+    <fragment
+        android:id="@+id/viewOrderFragment"
+        android:name="com.example.seamassignment.ui.orders.ViewOrderFragment"
+        android:label="View Order" />
 
 </navigation>

@@ -49,6 +49,10 @@ class OrdersFragment : Fragment() {
         buttonSalesReport.setOnClickListener {
             it?.findNavController()?.navigate(R.id.action_navigation_orders_to_salesReportFragement)
         }
+
+        linearLayout.setOnClickListener {
+            it?.findNavController()?.navigate(R.id.action_navigation_orders_to_viewOrderFragment)
+        }
     }
 
     private fun fillTable(){

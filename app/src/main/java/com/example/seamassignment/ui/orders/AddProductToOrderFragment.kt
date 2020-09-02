@@ -4,11 +4,13 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.seamassignment.Model.Customer
@@ -77,6 +79,12 @@ class AddProductToOrderFragment: Fragment() {
 
     private fun initButtons() {
         buttonAdd.setOnClickListener {
+            val text = "Product added to order"
+            val duration = Toast.LENGTH_SHORT
+
+            val toast = Toast.makeText(requireContext(), text, duration)
+            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0)
+            toast.show()
             it?.findNavController()?.navigate(R.id.action_addProductToOrderFragment_to_newOrderFragment)
         }
 

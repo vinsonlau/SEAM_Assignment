@@ -66,6 +66,9 @@
         <action
             android:id="@+id/action_newOrderFragment_to_addProductToOrderFragment"
             app:destination="@id/addProductToOrderFragment" />
+        <action
+            android:id="@+id/action_newOrderFragment_to_navigation_orders"
+            app:popUpTo="@id/navigation_orders" />
     </fragment>
     <fragment
         android:id="@+id/salesReportFragement"

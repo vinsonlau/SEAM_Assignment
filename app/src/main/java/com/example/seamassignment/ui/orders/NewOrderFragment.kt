@@ -1,15 +1,18 @@
 package com.example.seamassignment.ui.orders
 
 import android.os.Build
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
@@ -19,14 +22,12 @@ import com.example.seamassignment.R
 import com.example.seamassignment.RetrofitClient
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
-import kotlinx.android.synthetic.main.fragment_orders.*
 import kotlinx.android.synthetic.main.new_order.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import kotlin.collections.ArrayList
 
 class NewOrderFragment : Fragment() {
     //private lateinit var newOrderAdapter: NewOrderAdapter
@@ -103,28 +104,34 @@ class NewOrderFragment : Fragment() {
         //spinnerSalesperson.adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, salesPersonArray)
 
         //get customer list from database and fill up the spinner
-        RetrofitClient.customerInstance.getCustomerList().enqueue(object: Callback<ArrayList<Customer>>{
+        RetrofitClient.customerInstance.getCustomerList().enqueue(object :
+            Callback<ArrayList<Customer>> {
             override fun onResponse(
                 call: Call<ArrayList<Customer>>,
                 response: Response<ArrayList<Customer>>
             ) {
                 val customerArrayList: ArrayList<Customer>? = response.body()
-                spinnerCustomer.adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, customerArrayList!!)
-                spinnerCustomer.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-                    override fun onItemSelected(
-                        parent: AdapterView<*>,
-                        view: View,
-                        position: Int,
-                        id: Long
-                    ) {
-                        val customer = parent.getItemAtPosition(position) as Customer
-                        textViewEmail.text = customer.email
-                    }
+                spinnerCustomer.adapter = ArrayAdapter(
+                    requireContext(),
+                    android.R.layout.simple_list_item_1,
+                    customerArrayList!!
+                )
+                spinnerCustomer.onItemSelectedListener =
+                    object : AdapterView.OnItemSelectedListener {
+                        override fun onItemSelected(
+                            parent: AdapterView<*>,
+                            view: View,
+                            position: Int,
+                            id: Long
+                        ) {
+                            val customer = parent.getItemAtPosition(position) as Customer
+                            textViewEmail.text = customer.email
+                        }
 
-                    override fun onNothingSelected(parent: AdapterView<*>?) {
-                        // another interface callback
+                        override fun onNothingSelected(parent: AdapterView<*>?) {
+                            // another interface callback
+                        }
                     }
-                }
             }
 
             override fun onFailure(call: Call<ArrayList<Customer>>, t: Throwable) {
@@ -133,7 +140,7 @@ class NewOrderFragment : Fragment() {
         })
 
         //get staff list from database and fill up the spinner
-        RetrofitClient.staffInstance.getStaffList().enqueue(object: Callback<ArrayList<Staff>>{
+        RetrofitClient.staffInstance.getStaffList().enqueue(object : Callback<ArrayList<Staff>> {
             override fun onResponse(
                 call: Call<ArrayList<Staff>>,
                 response: Response<ArrayList<Staff>>
@@ -142,14 +149,18 @@ class NewOrderFragment : Fragment() {
                 val staffArrayListFiltered = arrayListOf<Staff>()
 
                 //filter the staff name list based on the staff role
-                if(staffArrayList != null){
-                    for(staff in staffArrayList){
-                        if (staff.staffRole.equals("SR03")){ //SR03 = Salesperson
+                if (staffArrayList != null) {
+                    for (staff in staffArrayList) {
+                        if (staff.staffRole.equals("SR03")) { //SR03 = Salesperson
                             staffArrayListFiltered.add(staff)
                         }
                     }
 
-                    spinnerSalesperson.adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, staffArrayListFiltered!!)
+                    spinnerSalesperson.adapter = ArrayAdapter(
+                        requireContext(),
+                        android.R.layout.simple_list_item_1,
+                        staffArrayListFiltered!!
+                    )
                 }
             }
 
@@ -175,6 +186,16 @@ class NewOrderFragment : Fragment() {
     private fun initButtons(){
         buttonAddProduct.setOnClickListener {
             it?.findNavController()?.navigate(R.id.action_newOrderFragment_to_addProductToOrderFragment)
+        }
+
+        buttonCreateOrder.setOnClickListener {
+            val text = "New order has been created"
+            val duration = Toast.LENGTH_SHORT
+
+            val toast = Toast.makeText(requireContext(), text, duration)
+            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0)
+            toast.show()
+            it?.findNavController()?.navigate(R.id.action_newOrderFragment_to_navigation_orders)
         }
     }
 
